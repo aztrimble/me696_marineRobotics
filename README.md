@@ -3,3 +3,8 @@ Repository for the ME 696 - Marine Robotics and ROS course
 
 
 Another way to think of ROS is Object Oriented programming for Robots.
+
+
+Getting Started:
+Installing:
+http://blog.justsophie.com/installing-and-setting-up-ros-in-5-mins/
