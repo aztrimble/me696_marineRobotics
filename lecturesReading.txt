@@ -1,0 +1,5 @@
+This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
+
+Week 1 (9/10-9-14)
+http://wiki.ros.org/ROS/Concepts
+https://www.clearpathrobotics.com/2014/01/how-to-guide-ros-101/
