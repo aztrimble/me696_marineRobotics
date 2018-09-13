@@ -1,5 +1,12 @@
 Below are a few links about ROS and programming best practices, conventions, and style guides to get you started. However, I expect you to expand you research and bring your existing expertise to this discussion. I expect us to evolve our own guide in the ReadMe file on Friday and then to use that for the course.
 
+ROS
+----------
+http://wiki.ros.org/BestPractices
+http://www.ros.org/reps/rep-0103.html
+http://www.ros.org/reps/rep-0105.html
+https://github.com/leggedrobotics/ros_best_practices/wiki
+
 General
 ----------
 Google style guide (https://github.com/google/styleguide)
