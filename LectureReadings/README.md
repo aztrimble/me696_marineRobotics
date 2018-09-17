@@ -13,3 +13,11 @@ EdEx videos:
  - ROS Nodes: https://www.youtube.com/watch?time_continue=14&v=eqNDKlW3nKM
  - ROS Topics: https://www.youtube.com/watch?time_continue=2&v=45WNgtntZys
  - ROS Applications: https://www.youtube.com/watch?v=ci5a4dSmHZY
+ 
+## Week 2 (9/17 to 9-21)
+
+ROS Tutorials to complete: 
+
+ - [Writing a Simple Publisher and Subscriber (Python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
+OR
+ - [Writing a Simple Publisher and Subscriber (C++)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
