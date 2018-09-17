@@ -48,3 +48,4 @@ There are many reasons for writing a descriptive, nicely-formatted document in G
 
 For writing descriptive formatted documents in Git, create a new file in a directory with a properly descriptive name (e.g. "InstallationInstructions", "PackageLists", "WritingAPackage", etc.), then name the document inside the directory `README.md`. This will allow you to leverage Git's [built-in writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/#links), which will allow you to write nicely-formatted documents like the one you are reading right now!
 
+Jack Borusinski
