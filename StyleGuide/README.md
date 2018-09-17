@@ -21,8 +21,8 @@ Arduino IDE (in Linux) dislikes filenames that start with numbers. It also prefe
 ## 2. ROS best practices
  - [Overview of ROS best practices](http://wiki.ros.org/BestPractices)
  - [Overview of ROS Enhancement Protocols](http://www.ros.org/reps/rep-0000.html)
- - [REP 103: Standard Units of Measure and Coordinate Conventions](http://www.ros.org/reps/rep-0103.html)
- - [REP 105: Coordinate Frames for Mobile Platforms](http://www.ros.org/reps/rep-0105.html)
+   - [REP 103: Standard Units of Measure and Coordinate Conventions](http://www.ros.org/reps/rep-0103.html)
+   - [REP 105: Coordinate Frames for Mobile Platforms](http://www.ros.org/reps/rep-0105.html)
  - [ROS Developers Guide](http://wiki.ros.org/DevelopersGuide)
 
 ## 3. Per-language style guide
