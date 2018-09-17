@@ -1,4 +1,4 @@
-#me696_marineRobotics Style Guide
+# me696_marineRobotics Style Guide
 
 This document details the programming best practices, conventions, and style guides we will use in the course.
 
