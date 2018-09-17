@@ -19,5 +19,5 @@ EdEx videos:
 ROS Tutorials to complete: 
 
  - [Writing a Simple Publisher and Subscriber (Python)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
-OR
+ - **OR**
  - [Writing a Simple Publisher and Subscriber (C++)](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29)
