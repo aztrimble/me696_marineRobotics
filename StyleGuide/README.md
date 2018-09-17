@@ -42,3 +42,9 @@ Arduino IDE (in Linux) dislikes filenames that start with numbers. It also prefe
 ### 3.4 Python
  - [ROS Python style guide](http://wiki.ros.org/PyStyleGuide)
  - [Google style guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
+ 
+## 4. Writing formatted `README.md` files
+There are many reasons for writing a descriptive, nicely-formatted document in Git (similar to the one you are reading right now).  This could be for writing instructions for using the files in your directory, writing an easy-to-follow tutorial or primer document, keeping a quick reference to important links, making your Git more user friendly for beginners, etc.  These formatted files are called `README.md` files, and auto-magically display below the contents of a directory when viewed in Git (either in the browser or in a supported app).  
+
+For writing descriptive formatted documents in Git, create a new file in a directory with a properly descriptive name (e.g. "InstallationInstructions", "PackageLists", "WritingAPackage", etc.), then name the document inside the directory `README.md`. This will allow you to leverage Git's [built-in writing and formatting syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/#links), which will allow you to write nicely-formatted documents like the one you are reading right now!
+
