@@ -19,26 +19,26 @@ Matlab (in Linux) dislikes filenames that start with numbers. For this reason, M
 Arduino IDE (in Linux) dislikes filenames that start with numbers. It also prefers that .ino scrips sit inside a directory with the same name as the filename. For this reason, Arduino script .ino filenames should begin with the letter a. The script should sit inside a directory named identical to the filename. Other than this, the naming convention remains the same. Example: `.../a20180101_sampleArduinoFilename/a20180101_sampleArduinoFilename.ino`
 
 ## 2. ROS best practices
- -[Overview of ROS best practices](http://wiki.ros.org/BestPractices)
- -[Overview of ROS Enhancement Protocols](http://www.ros.org/reps/rep-0000.html)
- -[REP 103: Standard Units of Measure and Coordinate Conventions](http://www.ros.org/reps/rep-0103.html)
- -[REP 105: Coordinate Frames for Mobile Platforms](http://www.ros.org/reps/rep-0105.html)
- -[ROS Developers Guide](http://wiki.ros.org/DevelopersGuide)
+ - [Overview of ROS best practices](http://wiki.ros.org/BestPractices)
+ - [Overview of ROS Enhancement Protocols](http://www.ros.org/reps/rep-0000.html)
+ - [REP 103: Standard Units of Measure and Coordinate Conventions](http://www.ros.org/reps/rep-0103.html)
+ - [REP 105: Coordinate Frames for Mobile Platforms](http://www.ros.org/reps/rep-0105.html)
+ - [ROS Developers Guide](http://wiki.ros.org/DevelopersGuide)
 
 ## 3. Per-language style guide
 
 ### 3.1 C++
- -[ROS C++ style guide](http://wiki.ros.org/CppStyleGuide)
- -[Google C++ style guide](https://google.github.io/styleguide/cppguide.html)
- -[MIT OceanAI lab C++ coding guidelines](http://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Lab.CPPStructure)
- -[MIT OceanAI lab C++ style guidelines](http://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Lab.CPPStyle)
+ - [ROS C++ style guide](http://wiki.ros.org/CppStyleGuide)
+ - [Google C++ style guide](https://google.github.io/styleguide/cppguide.html)
+ - [MIT OceanAI lab C++ coding guidelines](http://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Lab.CPPStructure)
+ - [MIT OceanAI lab C++ style guidelines](http://oceanai.mit.edu/ivpman/pmwiki/pmwiki.php?n=Lab.CPPStyle)
 
 ### 3.2 Java
- -[Google Java style guide](https://google.github.io/styleguide/javaguide.html)
+ - [Google Java style guide](https://google.github.io/styleguide/javaguide.html)
 
 ### 3.3 Javascript
- -[ROS Javascript style guide](http://wiki.ros.org/JavaScriptStyleGuide)
+ - [ROS Javascript style guide](http://wiki.ros.org/JavaScriptStyleGuide)
 
 ### 3.4 Python
- -[ROS Python style guide](http://wiki.ros.org/PyStyleGuide)
- -[Google style guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
+ - [ROS Python style guide](http://wiki.ros.org/PyStyleGuide)
+ - [Google style guide](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
