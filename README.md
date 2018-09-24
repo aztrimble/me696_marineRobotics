@@ -3,5 +3,6 @@ Repository for the ME 696 - Marine Robotics and ROS course
 
 1. Directory listing
  - [`Administrative`](/Administrative): files pertaining to course logistics.
- - [`StyleGuide`](/StyleGuide): files and links describing programming best practices, conventions, and style guides we will use in the course.
+ - [`Data`](/Data): data recorded in experiments (primarily bag files)
  - [`LectureReadings`](/LectureReadings): files and links with the required course readings, tutorials and assignments.
+ - [`StyleGuide`](/StyleGuide): files and links describing programming best practices, conventions, and style guides we will use in the course.
