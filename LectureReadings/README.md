@@ -4,7 +4,7 @@ This file provide links to what I consier the minimum required reading/watching.
 
 ## Week 3 (9/24 to 9/28)
  - [Kanaloa Guide for Installing RobotX Simulation](https://github.com/riplaboratory/Kanaloa/tree/master/Tutorials/SoftwareInstallation/RobotX-Simulation)
-   - Note, most of this is copied from the Robot X Simulatin creators site. As such, some of the steps are redundant if you already have a working ROS and Gazebo installation.
+   - Note, most of this is copied from the Robot X Simulation creators site. As such, some of the steps are redundant if you already have a working ROS and Gazebo installation.
  - [MIT 2.12 Robotics Course Lab Notes](http://people.csail.mit.edu/peterkty/teaching/)
    - You should be able to recreate, in our simulation environments and then in the realworld robots, the trajectory exercises in Lab 2.
 
