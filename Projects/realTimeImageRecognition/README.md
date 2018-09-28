@@ -7,10 +7,10 @@ To test this system initially, we will use the [Virtual Maritme RobotX Challenge
 
 To accomplish shape detection via image recognition, we will use a convolutional neural network in the Matlab deep learning toolbox.  
 
-## Step 1: Collect and label test images
+## Step 1: Collect test images
 To generate test images, we will "drive" the WAM-V around in the VMRC simulation, and have Matlab subscribe to one of the camera topics.  In this implementation, we chose to subscibe to the `/front_left_camera/image_raw/compressed` topic, thought this may change depending on your simulation configuration.  
 
-The script `m20180927_vmrcImageCollect.m` intializes a Matlab ROS node, and subcribes to the `/front_left_camera/image_raw/compressed` using the standard subscriber callback method.  The scipt allows the user to collect `n` number of images.  
+The script `m20180927_vmrcImageCollect.m` intializes a Matlab ROS node, and subcribes to the `/front_left_camera/image_raw/compressed` using the standard subscriber callback method.  The scipt allows the user to collect `n` number of images at a set time interval, and writes these images to the current Matlab directory.  
 
-## Step 2: 
+## Step 2: Label test images
 
