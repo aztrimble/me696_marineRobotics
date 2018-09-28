@@ -18,6 +18,8 @@ https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html
 
 ## Step 3: Create simple deep learning network for classification
 https://www.mathworks.com/help/deeplearning/examples/create-simple-deep-learning-network-for-classification.html
+https://www.mathworks.com/help/vision/examples/object-detection-using-deep-learning.html
+
 
 ## Step 4: Validate deep learning network against new streaming images from simulation
 
