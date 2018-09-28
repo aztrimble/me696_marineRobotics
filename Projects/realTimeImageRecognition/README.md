@@ -13,4 +13,11 @@ To generate test images, we will "drive" the WAM-V around in the VMRC simulation
 The script `m20180927_vmrcImageCollect.m` intializes a Matlab ROS node, and subcribes to the `/front_left_camera/image_raw/compressed` using the standard subscriber callback method.  The scipt allows the user to collect `n` number of images at a set time interval, and writes these images to the current Matlab directory.  
 
 ## Step 2: Label test images
+https://www.mathworks.com/help/vision/ug/train-object-detector-or-semantic-segmentation-network-from-ground-truth-data.html
+https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html
+
+## Step 3: Create simple deep learning network for classification
+https://www.mathworks.com/help/deeplearning/examples/create-simple-deep-learning-network-for-classification.html
+
+## Step 4: Validate deep learning network against new streaming images from simulation
 
