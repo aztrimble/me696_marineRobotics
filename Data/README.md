@@ -15,3 +15,7 @@ Folder for organizing, storing, and sharing recorded data.
   
 #### [driving_20180723](https://drive.google.com/file/d/1IM72OgZHopVvkrx_QZf1jbMyFT_Ob6vw/view?usp=sharing)
 - Board sitting on the dash of my car, car driving
+
+### 2018/02/23 range test `20180223_rangeTestFourGpsOneImu.bag`
+- Range test at ??? with multiple GPS units.  Probably two of them emulate the ground station (and therefore sit still in real life) and two of them emulate the boat (which move in real life).
+
