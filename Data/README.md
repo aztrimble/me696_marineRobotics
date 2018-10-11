@@ -21,4 +21,3 @@ Folder for organizing, storing, and sharing recorded data.
 
 ### `2018-09-29-14-38-21_imageRawRemoved.bag`
 This bag files is 563 MB, and therefore too large for Git.  It is hosted in our Kanaloa team drive ([link is here](https://drive.google.com/open?id=1p4ZIJCwoiUhmrM-hd2_6z2QyNh6vNqyI)).  This version has all topic except for the IMU and GPS due to some interop errors during the field test.  The imageRaw topics were removed from the bag file to reduce it size (the imageCompressed topics still remain).  
-
