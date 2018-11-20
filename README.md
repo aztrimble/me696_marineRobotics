@@ -2,7 +2,7 @@
 Repository for the ME 696 - Marine Robotics and ROS course
 
 ``` diff
---- WARNING: Do NOT merege this branch with master! ---
+--- WARNING: Do NOT merge this branch with master! ---
 ```
 
 1. Directory listing
