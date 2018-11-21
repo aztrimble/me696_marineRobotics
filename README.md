@@ -9,4 +9,4 @@ Repository for the ME 696 - Marine Robotics and ROS course
  - [`Projects`](</Projects>): folders for student projects
 
 ## Project Links
-   - [`Android`](/Android)
+   - [`Kanaloa Android Apps`](/Projects/Android)
