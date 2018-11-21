@@ -6,7 +6,7 @@ Repository for the ME 696 - Marine Robotics and ROS course
  - [`Data`](/Data): data recorded in experiments (primarily bag files)
  - [`LectureReadings`](/LectureReadings): files and links with the required course readings, tutorials and assignments.
  - [`StyleGuide`](/StyleGuide): files and links describing programming best practices, conventions, and style guides we will use in the course.
- - [`Android Modules`](</Android Modules>): source code for kanaloa ros/android app modules
+ - [`Projects`](</Projects>): folders for student projects
 
 ## Project Links
-   - [`Android Modules README`](/ANDROID_README.md)
+   - [`Android`](/Android)
