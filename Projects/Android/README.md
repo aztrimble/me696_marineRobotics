@@ -22,7 +22,7 @@ Repository for the ME 696 - Marine Robotics and ROS course
   - Download/clone this repo to a folder on your computer
   - Import Module ```File -> New -> Import Module```
   ![Import module](https://i.stack.imgur.com/Nlpfo.png)
-  - Find and Select the android_kanaloa_* module you want to import
+  - Find and Select the ```android_kanaloa_*``` module (folder) you want to import
   - Press the Sync Gradle project ```File -> Sync Project with Gradle Files```
   ![Sync Gradle](https://i.stack.imgur.com/Thqbc.png)
  
