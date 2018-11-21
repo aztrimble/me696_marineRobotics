@@ -21,6 +21,9 @@ Repository for the ME 696 - Marine Robotics and ROS course
       * Follow this tutorial [Android Studio & Tools Download](http://wiki.ros.org/android/kinetic/Android%20Studio/Download)
   - Then setup your ROS environment for development.
       * Follow this tutorial [Installation - ROS Development Environment](http://wiki.ros.org/android/Tutorials/kinetic/Installation%20-%20ROS%20Development%20Environment)
+      * only need to do step 3.1
+          + For the first command, it might be better to do ```mkdir -p ~/android_ros_workspace```, rather name the directory "android_core"
+          + Be sure to run ```catkin_make``` before moving on to next steps
   
 ### 3. Importing Kanaloa Android App modules
   - Download/clone this repo to a folder on your computer.
