@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/tmook/.android/build-cache/1c1a3205ddb176cd4f4245ca7f2b886711eb59ea/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    }
+]
