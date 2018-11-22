@@ -42,3 +42,16 @@ You can 1) **Instant run module on phone** or 2) **Build all modules then instal
 ### 5. Using Kanaloa Android Apps
  
 ### 6. Sensors used in location app
+  - GPS
+      * [Location Manager](https://developer.android.com/reference/android/location/LocationManager) from [android.location](https://developer.android.com/reference/android/location/package-summary)
+      * If onboard GPS module is avaliable use that information to update GPS position
+      * otherwise, use the Cell Phone Network to update the GPS position
+  - IMU
+      * World Frame
+          + **Orientation:** [TYPE_ROTATION_VECTOR](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It combines gyroscope and magnetic field sensors to orient basted on true north.
+          + **Angular Velocity:** [TYPE_GYROSCOPE](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It is calibrated to compensate for drift.
+          + **Linear Acceleration:** [TYPE_LINEAR_ACCELERATION](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It gives readings that exclude gravity.
+      * Device Frame
+          + **Orientation:** [TYPE_GAME_ROTATION_VECTOR](https://developer.android.com/guide/topics/sensors/sensors_position) is used. This sensor doesn't use the geomagnetic field, Therefore the readings will be referneced to phone's position when app was launched.
+          + **Angular Velocity:** [TYPE_GYROSCOPE](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It is calibrated to compensate for drift.
+          + **Linear Acceleration:** [TYPE_LINEAR_ACCELERATION](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It gives readings that exclude gravity.
