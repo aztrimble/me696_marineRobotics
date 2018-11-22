@@ -44,8 +44,8 @@ You can 1) **Instant run module on phone** or 2) **Build all modules then instal
 ### 6. Sensors used in location app
   - GPS
       * [Location Manager](https://developer.android.com/reference/android/location/LocationManager) from [android.location](https://developer.android.com/reference/android/location/package-summary)
-      * If onboard GPS module is avaliable use that information to update GPS position
-      * otherwise, use the Cell Phone Network to update the GPS position
+      * If onboard [GPS_PROVIDER](https://developer.android.com/reference/android/location/LocationManager#GPS_PROVIDER) module is avaliable use that information to update GPS position
+      * otherwise, use the [NETWORK_PROVIDER](https://developer.android.com/reference/android/location/LocationManager#NETWORK_PROVIDER) to update the GPS position
   - IMU
       * World Frame
           + **Orientation:** [TYPE_ROTATION_VECTOR](https://developer.android.com/guide/topics/sensors/sensors_motion) is used. It combines gyroscope and magnetic field sensors to orient basted on true north.
