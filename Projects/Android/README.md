@@ -44,6 +44,7 @@ You can 1) **Instant run module on phone** or 2) **Build all modules then instal
 ### 6. Sensors used in location app
   - GPS
       * [Location Manager](https://developer.android.com/reference/android/location/LocationManager) from [android.location](https://developer.android.com/reference/android/location/package-summary)
+      * [Latitude, Longitude, Altitude](https://developer.android.com/reference/android/location/Location) are updated on each reading.
       * If onboard [GPS_PROVIDER](https://developer.android.com/reference/android/location/LocationManager#GPS_PROVIDER) module is avaliable use that information to update GPS position
       * otherwise, use the [NETWORK_PROVIDER](https://developer.android.com/reference/android/location/LocationManager#NETWORK_PROVIDER) to update the GPS position
   - IMU
