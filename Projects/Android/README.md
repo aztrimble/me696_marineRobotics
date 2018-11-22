@@ -20,14 +20,25 @@ Repository for the ME 696 - Marine Robotics and ROS course
   
 ### 3. Importing Kanaloa Android App modules
   - Download/clone this repo to a folder on your computer
+  - Open Android Studios
   - Import Module ```File -> New -> Import Module```
   ![Import module](https://i.stack.imgur.com/Nlpfo.png)
   - Find and Select the ```android_kanaloa_*``` module (folder) you want to import
   - Press the Sync Gradle project ```File -> Sync Project with Gradle Files```
   ![Sync Gradle](https://i.stack.imgur.com/Thqbc.png)
  
-### 4. Installing Kanaloa Android Apps to phone
- 
+### 4. Build and run your app
+You can 1) **Instant run module on phone** or 2) **Build all modules then install on phone**
+  - 1)**Instant run module on phone**
+      * Connect android phone to computer
+      * Select the module you want to run from the drop down menu
+      * Follow the Instructions in the Android [Build and run your app](https://developer.android.com/studio/run/) Tutorial 
+  - 2)**Build all modules then install on phone**
+      * select ```Build Bundle(s) / APK(s) > Build APK(s)```
+      * then look for the apk in the build folder```project-name/module-name/build/outputs/apk/```
+      * download apk to phone
+      * on the phone, run apk to install app on phone
+  
 ### 5. Using Kanaloa Android Apps
  
 ### 6. Sensors used in location app
