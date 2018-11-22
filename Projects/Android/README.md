@@ -40,6 +40,25 @@ You can 1) **Instant run module on phone** or 2) **Build all modules then instal
       * on the phone, run apk to install app on phone
   
 ### 5. Using Kanaloa Android Apps
+  - Kanaloa Location App
+      * To Run App
+          + Start App
+          + Type in ROS Master URI
+          + Tap screen to see current sensor data
+          + IMU world frame data should start and publish to ```kanaloa/android/imu_world```
+          + IMU Device frame data should start and publish to ```kanaloa/android/imu_device```
+          + GPS data should start and publish to ```kanaloa/android/gps```
+      * To Shutdown
+          + Pull Down notification bar
+          + tap the "Kanaloa Location" Notification to shutdown gracefully
+  - Kanaloa Camera \<number\> App
+      * To Run App
+          + Start App
+          + Type in ROS Master URI
+          + Camera should start and publish to ```kanaloa/android_<number>/image/compressed```
+      * To Shutdown
+          + Pull Down notification bar
+          + tap the "kanaloa Camera \<number\>" Notification to shutdown gracefully
  
 ### 6. Sensors used in location app
   - GPS
