@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+
+
+#import important modules
+import rospy
+from sensor_msgs.msg import Imu
+from std_msgs.msg import String
+
+
+
+
+
+
+
+#Puts the data through calibration and sends it to a new topic
+def imu_callback(msg, pub):
+	
+	#Takes linear acceleration data and corrects the magnetude
+	msg.linear_acceleration_covariance = [0.0015387262937311438, 0.0, 0.0, 0.0, 0.0015387262937311438, 0.0, 0.0, 0.0, 0.0015387262937311438]
+
+
+	#Takes the whole uncalibrated Imu data and sets to new accelerations
+	
+
+	#Publishes the adjusted data to new topic
+	pub.publish(msg)
+
+
+def main():
+	rospy.init_node('IMU_calibrator')
+	pub = rospy.Publisher("/kanaloa/android/imu_world/covariance", Imu, queue_size = 10)
+	rospy.Subscriber('/kanaloa/android/imu_world', Imu, imu_callback, callback_args=pub)
+	rospy.spin()
+
+
+if __name__ == '__main__':
+	try:
+		main()
+	except rospy.ROSInterruptException:
+		pass
+   

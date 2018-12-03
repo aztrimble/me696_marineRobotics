@@ -1,0 +1,111 @@
+#!/usr/bin/env python
+
+
+#import important modules
+import rospy
+from sensor_msgs.msg import NavSatFix, NavSatStatus
+from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3
+from std_msgs.msg import String
+
+
+
+lat_to_m = 110720.843
+long_to_m = 103766.254
+
+gps = NavSatFix()
+status = NavSatStatus("STATUS_NO_FIX", "SERVICE_GPS")
+
+
+gps.header.frame_id = "gps"
+#gps.NavSatStatus = status
+gps.position_covariance = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+gps.position_covariance_type = 1
+gps.latitude = 21.292795
+
+def main():
+
+	rospy.init_node('GPS_fakeline')
+	pub = rospy.Publisher("/adafruitGps/fix", NavSatFix, queue_size = 10)
+	
+
+	start_time = rospy.Time.now()
+	t = rospy.Duration(0)
+	s = 8
+
+	while t < (rospy.Time(s)-rospy.Time(0)):
+		t =rospy.Time.now() - start_time
+		gps.longitude = -157.70991
+		gps.header.stamp = rospy.Time.now()
+		pub.publish(gps)
+	
+
+
+	gps.longitude = -157.70991
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + 0.5/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + 2/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+2)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+4)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+6)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+8)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+10)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+12)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+14)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+16)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+18)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+20)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+20+1.5)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+	rospy.sleep(1.)
+	gps.longitude = -157.70991 + (2+20+2)/(long_to_m)
+	gps.header.stamp = rospy.Time.now()
+	pub.publish(gps)
+
+
+
+if __name__ == '__main__':
+	try:
+		main()
+	except rospy.ROSInterruptException:
+		pass
+   
+		
