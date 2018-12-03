@@ -1,4 +1,0 @@
-#Sat Oct 27 00:09:53 HST 2018
-base.0=/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
-renamed.0=classes.dex
-file.0=/home/tmook/android_core/src/android_core/android_kanaloa_location/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex
