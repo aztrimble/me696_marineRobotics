@@ -70,5 +70,16 @@ A lot of things have gone wrong while trying to use robot_localization. Chances 
 		TAB1
 			rostopic echo (/topic_name)
 				topic will usually be /odometry/filtered or /gps/filtered
+				
+				
+## Helpful Resources
+
+A few websites I have found helpful and referenced when I was having problems
+
+* http://docs.ros.org/melodic/api/robot_localization/html/integrating_gps.html
+* http://docs.ros.org/melodic/api/robot_localization/html/state_estimation_nodes.html
+* http://docs.ros.org/melodic/api/robot_localization/html/navsat_transform_node.html
+* https://answers.ros.org/question/239049/issues-using-robot_localization-with-gps-and-imu/
+* https://answers.ros.org/question/300345/robot-localization-package-transform-from-base_link-to-odom-was-unavailable-for-the-time-requested-using-latest-instead-imugps/
 		
 
