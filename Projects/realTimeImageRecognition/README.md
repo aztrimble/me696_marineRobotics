@@ -20,6 +20,8 @@ Some examples of classifcation problems are: identifying animals from images (do
 
 Artificial neural networks (ANNs) are a method of machine learning loosely based on the biological neural networks in animal brains.  In an ANN, a collection of nodes, called neurons, are constructed in layers, such that neurons in one layer can pass signals to neurons in the following layer.  The anatomy of a simple neuron is shown below:
 
+![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/neuron.jpg)
+
 In our problem, we are identifying whether or not a shape exists in an image, making it a classification problem.  In our case, we are distinguishing between three different possible shapes, making it a multi-classification problem.  In addition, this problem is made more complex still because it needs to identify whether or not multiple 
 
 ## General workflow
