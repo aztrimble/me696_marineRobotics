@@ -22,6 +22,10 @@ Artificial neural networks (ANNs) are a method of machine learning loosely based
 
 ![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/neuron.jpg)
 
+When a neuron receives a signal, it combines those signals into a weighting function, which is then multiplied by an activation function, φ, to determine its output. There are multiple candidates for the activation function, φ.  Common functions include the step function (perceptron), linear combination (no activation function), sigmoid function, tanh function, and rectified linear function.  A graphical representation of these activation functions are shown below:
+
+![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/activationFunctions.jpg)
+
 In our problem, we are identifying whether or not a shape exists in an image, making it a classification problem.  In our case, we are distinguishing between three different possible shapes, making it a multi-classification problem.  In addition, this problem is made more complex still because it needs to identify whether or not multiple 
 
 ## General workflow
