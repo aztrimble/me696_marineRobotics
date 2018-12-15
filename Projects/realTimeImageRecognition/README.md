@@ -26,6 +26,12 @@ When a neuron receives a signal, it combines those signals into a weighting func
 
 ![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/activationFunctions.jpg)
 
+By combining a network of these neurons togehter into a full ANN, comples functions can be modeled.  A standard forward-propagation model is shown below:
+
+![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/forwardPropagation.jpg)
+
+The ANN in the above figure has two hidden laters--these are the layers in between the input and output layers in a given ANN.  The greater the number of hidden laters in an ANN, the greater it's intrinsic dimensionality, and therefore, the greater it's representational power.  
+
 In our problem, we are identifying whether or not a shape exists in an image, making it a classification problem.  In our case, we are distinguishing between three different possible shapes, making it a multi-classification problem.  In addition, this problem is made more complex still because it needs to identify whether or not multiple 
 
 ## General workflow
