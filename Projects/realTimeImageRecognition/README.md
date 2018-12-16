@@ -30,7 +30,13 @@ By combining a network of these neurons togehter into a full ANN, comples functi
 
 ![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/forwardPropagation.jpg)
 
-The ANN in the above figure has two hidden laters--these are the layers in between the input and output layers in a given ANN.  The greater the number of hidden laters in an ANN, the greater it's intrinsic dimensionality, and therefore, the greater it's representational power.  
+The ANN in the above figure has two hidden laters--these are the layers in between the input and output layers in a given ANN.  The greater the number of hidden laters in an ANN, the greater it's intrinsic dimensionality, and therefore, the greater it's representational power.  For this reason, ANNs with many hidden layers are sometimes referred to as "deep learning" systems.  An ANN with a single neuron can express the boolearn functions AND, OR and NOT, but not XOR.  A feed-forward ANN with a single hidden layer can express any boolean function, and with a sufficiently large number of neurons in the hidden layer, it can approximate any bounded continuous function to arbitrary precision.  A feed-forward ANN with two hidden layers can approximate any function to aprbitrary accuracy.  
+
+The word "convolutional" in the name refers to the connection scheme of the neurons.  In the forward propagation model shown in the above figure, all of the neurons in one layer are connected to all of the nodes in the following layer, and in the previous layer.  In a "convolutional" neural network, only the neurons in the near vicinity of other neurons are connected to each other.  The fully connected ANN is more mathematically simple, and provides the greatest theoretical representational power due to the total number of network connections; however, because the computation time increases exponentially with each neuron, the fully-connected ANN is computationally slow.  In problems involving visual data, there is a tendency for neurons to connect to neurons in their close vicinicy; this allows the convolutional neural network to train far more quickly, as it    
+
+
+
+the convolutional neural network more appropriate for tacklin
 
 In our problem, we are identifying whether or not a shape exists in an image, making it a classification problem.  In our case, we are distinguishing between three different possible shapes, making it a multi-classification problem.  In addition, this problem is made more complex still because it needs to identify whether or not multiple 
 
