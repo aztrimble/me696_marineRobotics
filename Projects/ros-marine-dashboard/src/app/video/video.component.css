@@ -1,0 +1,28 @@
+.video {
+ height: 100%;
+ width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+.matButton {
+  width: 100% !important;
+  margin-bottom: 5px;
+}
+
+mat-select {
+  width: 100%;
+}
+
+.disconnectButton {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.selectVid {
+  height: calc(100% - 20px); 
+  width: calc(100% - 20px); ;
+  padding: 10px;
+}

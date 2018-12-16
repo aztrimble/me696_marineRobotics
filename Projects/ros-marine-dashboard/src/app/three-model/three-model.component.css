@@ -1,0 +1,10 @@
+.threejs-window {
+  width: 100%;
+  height: 100%;
+}
+
+.threeButtons {
+  position: absolute;
+  top: calc(100% - 70px);
+  left: 10px;
+}

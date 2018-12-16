@@ -1,0 +1,20 @@
+<div class="threejs-window" #threejsWindow style="width: 100%; height: 80%"></div>
+
+<div class="threeButtons">
+  <mat-form-field>
+    <mat-select placeholder="Orientation Topics" [(value)]="vector3StampedTopic" (selectionChange)="changeVector3StampedTopic($event)">
+      <mat-option *ngFor="let topic of vector3StampedTopics" [value]="topic">
+        {{ topic.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Point Cloud Topics" [(value)]="pointCloud2Topic" (selectionChange)="changePointCloud2Topic($event)">
+      <mat-option *ngFor="let topic of pointCloud2Topics" [value]="topic">
+        {{ topic.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div>

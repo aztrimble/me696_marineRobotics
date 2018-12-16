@@ -1,0 +1,23 @@
+<div #map id="map" style="width: 100%; height: 80%"></div>
+
+<div class="mapButtons">
+  <mat-form-field>
+    <mat-select placeholder="GPS Topics" [(value)]="navSatFixTopic" (selectionChange)="changeNavSatFixTopic($event)">
+      <mat-option *ngFor="let topic of navSatFixTopics" [value]="topic">
+        {{ topic.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="IMU Topics" [(value)]="imuTopic" (selectionChange)="changeImuTopic($event)">
+      <mat-option *ngFor="let topic of imuTopics" [value]="topic">
+        {{ topic.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button *ngIf="lockGPS" mat-raised-button class="matButton" color="warn" (click)="lockUnlockGPS()">Map Lock</button>
+  <button *ngIf="!lockGPS" mat-raised-button class="matButton" color="warn" (click)="lockUnlockGPS()">Map Free</button>
+
+</div>

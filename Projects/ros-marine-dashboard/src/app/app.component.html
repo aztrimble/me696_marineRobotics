@@ -1,0 +1,67 @@
+<mat-card *ngIf="loading">
+  <div>
+    <mat-form-field style="width: 300px">
+      <input matInput placeholder="IP Address of Robot" [(ngModel)]="roscoreIp" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <mat-form-field style="width: 300px" *ngIf="useTileServer">
+      <input matInput placeholder="IP Address of TileServer" [(ngModel)]="tileserverIp" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    <mat-checkbox class="example-margin" [(ngModel)]="useTileServer">Use Local Tile Server</mat-checkbox>
+    <button mat-raised-button color="primary" (click)="setIP()">Connect</button>
+  </div>
+  <hr>
+  <div style="text-align: center;">
+    <a href="https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/ros-marine-dashboard/builds/ros-marine-dashboard-0.1-mac.zip" download>
+      <img src="../assets/apple.png" width="100" style="display:inline-block;">
+    </a>
+    <a href="https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/ros-marine-dashboard/builds/ros-marine-dashboard-0.1-windows.exe" download>
+      <img src="../assets/windows.png" width="100" style="display:inline-block;"> 
+    </a>
+    <a href="https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/ros-marine-dashboard/builds/ros-marine-dashboard-0.1-linux.AppImage" download>
+      <img src="../assets/linux.png" width="100" style="display:inline-block;">
+    </a>
+  </div>
+</mat-card>
+
+<mat-drawer-container *ngIf="!loading" class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav"></mat-drawer>
+
+  <div class="example-sidenav-content">
+
+    <mat-grid-list cols="3" rowHeight="2:1" gutterSize="10px">
+
+      <mat-grid-tile rowspan="2" [class.mat-elevation-z8]="true">
+        <app-map style="height: 100%; width:100%;"></app-map>
+      </mat-grid-tile>
+
+      <mat-grid-tile [class.mat-elevation-z8]="true">
+        <app-three-model style="height: 100%; width:100%;"></app-three-model>
+      </mat-grid-tile>
+
+      <mat-grid-tile [class.mat-elevation-z8]="true">
+        <app-video style="width: 100%; height: 100%;"></app-video>
+      </mat-grid-tile>
+
+      <mat-grid-tile [class.mat-elevation-z8]="true">
+        <app-video style="width: 100%; height: 100%;"></app-video>
+      </mat-grid-tile>
+
+      <mat-grid-tile [class.mat-elevation-z8]="true">
+        <app-video style="width: 100%; height: 100%;"></app-video>
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="2" [class.mat-elevation-z8]="true">
+        <app-voltagegraph style="width: 100%; height: 100%;"></app-voltagegraph>
+      </mat-grid-tile>
+
+      <mat-grid-tile [class.mat-elevation-z8]="true">
+        <button mat-raised-button class="matButton" color="primary" (click)="refreshTopics()">Refresh Topics</button>
+        <button mat-raised-button class="matButton" color="warn" (click)="disconnect()">Disconnect</button>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+
+  </div>
+
+</mat-drawer-container>

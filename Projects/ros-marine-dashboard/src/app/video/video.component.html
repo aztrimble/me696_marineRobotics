@@ -1,0 +1,16 @@
+<div class="selectVid" *ngIf="!loaded">
+  <mat-form-field>
+    <mat-select placeholder="Video Topics" [(value)]="topic" (selectionChange)="changeTopic($event)">
+      <mat-option *ngFor="let topic of videoTopics" [value]="topic">
+        {{ topic.name }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+
+</div>
+
+<img *ngIf="loaded" #video class="video">
+<button *ngIf="loaded" mat-mini-fab (click)="disconnectVideo()" class="disconnectButton" color="warn">
+  <mat-icon>close</mat-icon>
+</button>
