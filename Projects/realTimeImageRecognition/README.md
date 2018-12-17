@@ -1,7 +1,7 @@
 # Real-Time Image Recognition
 
 Created by: Brennan Yamamoto
-Last update: 2018.12.15
+Last update: 2018.12.16
 
 In this work, we will identify shapes through a camera straming images through ROS.  We will do this using ROS and Matlab.  The shapes to be identified are a square, circle, triangle, and cruciform (plus sign), as described in the RobotX [2016](https://www.robotx.org/images/files/2016-MRC-Tasks-2016-11-28.pdf) and [2018](https://www.robotx.org/images/RobotX-2018-Tasks_v2.0.pdf) rules.
 
