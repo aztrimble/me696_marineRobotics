@@ -67,5 +67,9 @@ Second, also ensure that the `height` and `width` variables match the resolution
 
 Once your settings are correcly dialed in, run the script.  Provided that you have a Nvidia grahpics card on your computer, and the Matlab parallel computing toolbox in your Matlab installation, your training should execute much more quickly.  As more and more training epochs execute, you should see that your Mini-batch accuracy converges to 100%.  This can also give you an idea of how many epochs are necessary to achieve a reasonably accurate RCNN on a given training dataset. 
 
-### Step 4: Validate deep learning network against new streaming images from simulation
+Once the training is complete, save the generated rcnn variable as a .mat file so that you can access it later.  The easiest way to do this is to right click the `rcnn` variable in the workspace, click `Save As...`, and save the file as `rcnn.mat`.  If you want to bring the rcnn back into your workspace in the future, simply double click the `rcnn.mat` file, and it will load into your workspace. 
 
+### Step 4: Validate deep learning network against new streaming images from simulation
+The script `m20181005_rosRcnnNode.m` runs alongside the VMRC simulation, and similar to the previous script, subscibes to the `/front_left_camera/image_raw/compressed` topic.  First, bring your RCNN into your workspace by double clicking your `rcnn.mat` file generated in the previous step (this may take a few seconds).  Once the VMRC simulation is launched, run the scipt; as you move the WAMV through the simulation environment, the script reads in the camera topic, and runs the straming image through the RCNN network.  The output from the network will publish to the topic `/rcnn_front_left_camera/image_raw/`, which you can then view in RVIZ, or any image viewing package in ROS.
+
+If the network is sufficiently trained, as you approach the obstacle with shapes in the simulation, the script will apply a bounding box to each identified shape, and display the shape (`o` for circle, `+` for cruiciform, and `^` for triangle) and confidence (0 through 1).
