@@ -29,10 +29,8 @@ nFilters = 16;           % number of neuorons in the convolutional layer that co
 middleLayers = [
     convolution2dLayer(filterSize,nFilters)
     reluLayer()
-%     maxPooling2dLayer(3,'Stride',2)
     convolution2dLayer(filterSize,nFilters)
     reluLayer()
-%     maxPooling2dLayer(3,'Stride',2)
     convolution2dLayer(filterSize,nFilters)
     reluLayer()
     maxPooling2dLayer(3,'Stride',2)
@@ -59,20 +57,11 @@ layers = [
     ];
 
 % Train RCNN
-doTraining = false;         % set this flag to true to train network
+doTraining = true;         % set this flag to true to train network
 if doTraining == true
 
-%     % Set options for training
-%     options = trainingOptions('sgdm',...
-%         'LearnRateSchedule','piecewise',...
-%         'LearnRateDropFactor',0.1,...
-%         'LearnRateDropPeriod',5,...
-%         'MaxEpochs',50,...
-%         'MiniBatchSize',128,...
-%         'Verbose',true);
-
     options = trainingOptions('sgdm', ...
-    'MiniBatchSize', 32, ...
+    'MiniBatchSize', 1, ...
     'InitialLearnRate', 1e-3, ...
     'MaxEpochs', 30, ...
     'Verbose',true);
@@ -85,7 +74,6 @@ else
 
     clear img
     % Test the network on a testng image
-%     img = imread('snap_197-2.jpeg');
     img = imread('snap_69.jpeg');
 %     img = imread('snap_84-1.jpeg');
 %     img = imread('snap_29.jpeg');
