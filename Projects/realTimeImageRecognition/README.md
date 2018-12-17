@@ -52,13 +52,15 @@ At this point, you should have a database of images from the VMRC simulation sav
 For the sake of this example, the images will be scaled by a factor of 0.5 on each axis, which will take the output resolution of 800x800 to 400x400.  This can be performed using a simple scaling script on all images in your directory. 
 
 ### Step 2: Label test images
-At this point, you should have a directory with a number of test and/or training images.  The next task is to "label" these images for training the RCNN in the next step.  Because the RCNN extracts _both_ the position of the feature in the image _and_ the type of feature, this also means that we need to label this information in training.  To do this, you should use the Matlab Image Labeler application.  
-https://www.mathworks.com/help/vision/ug/train-object-detector-or-semantic-segmentation-network-from-ground-truth-data.html
-https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html
+At this point, you should have a directory with a number of test and/or training images.  The next task is to "label" these images for training the RCNN in the next step.  Because the RCNN extracts _both_ the position of the feature in the image _and_ the type of feature, this also means that we need to label this information in training.  To do this, you should use the Matlab Image Labeler application.  Go to the `APPS` tab in the Matlab integrated development environment, and click on the Image Labeler application (alternatively, you can also type `imageLabeler` into the command window to launch the image labeler application directly).  
+
+Before running the imageLabeler app, it is highly recommended that you put all of your training images in the same directory, and save your image labeling session in that same directory; __do not make subdirectories within your image directory__.  This way, the image labeler application is much less likely to run into path errors when adding new images to your image database.  Once inside the image labeler app, click on `Load > Add images from folder`, and select all of the images inside your training image directory for import.  The next thing you want to do is create noew ROI (region of interest) lables for each of your shapes.  In our case, our shapes are triangle, circle, and cruciform.  In each image, you will click and drag a bounding box on each shape corresponding to each ROI label.  A sample of this process is shown in the figure below: 
+
+![image](https://github.com/aztrimble/me696_marineRobotics/blob/master/Projects/realTimeImageRecognition/Images/imageLabelerSample.JPG)
+
+Continue this process for all of the images in your image datastore.  Once complete, save your image labeling session _and_ export your labels (either to your workspace, or as a `.mat` file).  Saving the image labeling session allows you to open your session at a later date if you add more training data to your directory, and your exported labels is the actual datastore imported into your RCNN for training.
 
 ## Step 3: Create simple deep learning network for classification
-https://www.mathworks.com/help/deeplearning/examples/create-simple-deep-learning-network-for-classification.html
-https://www.mathworks.com/help/vision/examples/object-detection-using-deep-learning.html
 
 
 ## Step 4: Validate deep learning network against new streaming images from simulation
