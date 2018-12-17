@@ -60,8 +60,12 @@ Before running the imageLabeler app, it is highly recommended that you put all o
 
 Continue this process for all of the images in your image datastore.  Once complete, save your image labeling session _and_ export your labels (either to your workspace, or as a `.mat` file).  Saving the image labeling session allows you to open your session at a later date if you add more training data to your directory, and your exported labels is the actual datastore imported into your RCNN for training.
 
-## Step 3: Create simple deep learning network for classification
+### Step 3: Create and train RCNN network
+The script `m20181005_trainRCNN.m` creates and trains your RCNN network.  First, ensure that your groundTruth variable path is correctly set in Matlab.  Depending on how you exported your groundTruth variable from your image labeling session, this line may need to be changed; the `trainingData` variable must ultimately point to your groundTruth variable in code.  
 
+Second, also ensure that the `height` and `width` variables match the resolution of your imported images.  For this exercise, we will be using 400x400 images, but this is not a realistic resolution to use for real cameras (as discussed previously), so you will likely need to change this resolution to some of the more common 16:9 resolutions.  
 
-## Step 4: Validate deep learning network against new streaming images from simulation
+Once your settings are correcly dialed in, run the script.  Provided that you have a Nvidia grahpics card on your computer, and the Matlab parallel computing toolbox in your Matlab installation, your training should execute much more quickly.  As more and more training epochs execute, you should see that your Mini-batch accuracy converges to 100%.  This can also give you an idea of how many epochs are necessary to achieve a reasonably accurate RCNN on a given training dataset. 
+
+### Step 4: Validate deep learning network against new streaming images from simulation
 
