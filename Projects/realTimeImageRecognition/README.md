@@ -41,17 +41,17 @@ The regions with convolutional neural network, or R-CNN for short, is a machine 
 ## General workflow
 To test this system initially, we will use the [Virtual Maritme RobotX Challenge (VMRC) simulation](https://bitbucket.org/osrf/vmrc).  While generating images from a simulation environment is far from perfect, using a simulation is a quick method of validating the interoperability of the required packages.  Eventually this functionality will be extended into the real world.  
 
-## Step 1: Collect test images
+### Step 1: Collect test images
 To generate test images, we will "drive" the WAM-V around in the VMRC simulation, and have Matlab subscribe to one of the camera topics.  In this implementation, we chose to subscibe to the `/front_left_camera/image_raw/compressed` topic, thought this may change depending on your simulation configuration.  [For instructions on how to set up the VMRC simulation, visit this link](https://github.com/riplaboratory/Kanaloa/tree/master/Tutorials/SoftwareInstallation/RobotX-Simulation).
 
 The script `m20181005_vmrcImageCollect.m` intializes a Matlab ROS node, and subcribes to the `/front_left_camera/image_raw/compressed` using the standard subscriber callback method.  The scipt allows the user to collect `n` number of images at a set time interval, and writes these images to the current Matlab directory.  
 
-## Step 1b (optional): condition test images
+### Step 1b (optional): condition test images
 At this point, you should have a database of images from the VMRC simulation saved to your working directory.  At the time of writing the VMRC simulation outputs images with a resolution of 800x800.  This resolution is quite strange since typical cameras utilize an aspect ratio fo 16:9, resulting in typical resolutions of 1920x1080, or 1280x720.  The images used to train the RCNN must all have the same resolution, therefore, it is important that you decide on a single resolution prior to importing all of your images to the RCNN.  It is a smart idea to utilize a resolution that matches the resolution of your camera, or is a factor/multiple of that resolution, so minimal pre-processing will need to be performed on each image frame when the RCNN is implemented in real time.  A higher resolution will result in an increased ability to resolve shapes at longer distances; however, extremely high resolutions will result in exponentially increased training time, _and_ increased execution time.  Therefore, our recommendation when selecting a scaled-down resolution that your camera internally supports, this will eliminate any pre-processing steps prior to running the network in real time.
 
 For the sake of this example, the images will be scaled by a factor of 0.5 on each axis, which will take the output resolution of 800x800 to 400x400.  This can be performed using a simple scaling script on all images in your directory. 
 
-## Step 2: Label test images
+### Step 2: Label test images
 At this point, you should have a directory with a number of test and/or training images.  The next task is to "label" these images for training the RCNN in the next step.  Because the RCNN extracts _both_ the position of the feature in the image _and_ the type of feature, this also means that we need to label this information in training.  To do this, you should use the Matlab Image Labeler application.  
 https://www.mathworks.com/help/vision/ug/train-object-detector-or-semantic-segmentation-network-from-ground-truth-data.html
 https://www.mathworks.com/help/vision/ref/objectdetectortrainingdata.html
