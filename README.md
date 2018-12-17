@@ -11,3 +11,4 @@ Repository for the ME 696 - Marine Robotics and ROS course
 ## Project Links
  - [`Real Time Image Recognition`](/Projects/realTimeImageRecognition)
  - [`Kanaloa Android Apps`](/Projects/Android)
+ - [`LiDar`](/Projects/LiDar)
