@@ -8,11 +8,11 @@ In this work, we will explore different methods for robot laser odometry and map
 If an IMU is available, the orientation (integrated from angular rate) and acceleration measurements are used to deal with general motion of the lidar, while the program takes care of the linear motion.
 
 ## Directory
-  - ['Frank_Moosmann'](</LiDar/Frank_Moosmann>): LOAM using SVMs for object identification with dynamic tracking and course prediction
- - ['LeGO-LOAM'](</LiDar/LeGO-LOAM>): LOAM based off of loam_velodyne with the addition of surface and edge detection for additional filtering
- - ['Literature'](</LiDar/Literature>): Literature on Lidar LOAM
- - ['loam_velodyne'](</LiDar/loam_velodyne>): Basic LOAM with particle filtering
- - ['Velodyne_Resources'](</LiDar/Velodyne_Resources>): Manuals for Velodyne VLP16
+  - ['Frank_Moosmann'](Frank_Moosmann): LOAM using SVMs for object identification with dynamic tracking and course prediction
+ - ['LeGO-LOAM'](LeGO-LOAM): LOAM based off of loam_velodyne with the addition of surface and edge detection for additional filtering
+ - ['Literature'](Literature): Literature on Lidar LOAM
+ - ['loam_velodyne'](loam_velodyne): Basic LOAM with particle filtering
+ - ['Velodyne_Resources'](Velodyne_Resources): Manuals for Velodyne VLP16
 
  - ['Bag Files'](http://www.frc.ri.cmu.edu/~jizhang03/Datasets/): Additional bag files can be found here
 
