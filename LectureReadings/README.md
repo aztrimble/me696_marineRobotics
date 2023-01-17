@@ -5,7 +5,7 @@ This file provide links to what I consier the minimum required reading/watching.
 ## Week 2 (1/17 to 1/19)
    -Fossen Chapters 1 & 2.
 
-##ARCHIVE
+## ARCHIVE
 Readings from 2018,
 ## Week 3 (9/24 to 9/28)
  - [Kanaloa Guide for Installing RobotX Simulation](https://github.com/riplaboratory/Kanaloa/tree/master/Tutorials/SoftwareInstallation/RobotX-Simulation)
