@@ -1,9 +1,10 @@
-# Lecture readings
+# Lecture ``readings''
 
 This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
 
 ## Week 2 (1/17 to 1/19)
    -Fossen Chapters 1 & 2.
+   --Modern Robotics, Chapter 2.
 
 ## ARCHIVE
 Readings from 2018,
