@@ -2,6 +2,11 @@
 
 This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
 
+## Week 2 (1/17 to 1/19)
+   -Fossen Chapters 1 & 2.
+
+##ARCHIVE
+Readings from 2018,
 ## Week 3 (9/24 to 9/28)
  - [Kanaloa Guide for Installing RobotX Simulation](https://github.com/riplaboratory/Kanaloa/tree/master/Tutorials/SoftwareInstallation/RobotX-Simulation)
    - Note, most of this is copied from the Robot X Simulation creators site. As such, some of the steps are redundant if you already have a working ROS and Gazebo installation.
