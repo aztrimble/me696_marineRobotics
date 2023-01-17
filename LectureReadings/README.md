@@ -4,7 +4,7 @@ This file provide links to what I consier the minimum required reading/watching.
 
 ## Week 2 (1/17 to 1/19)
    -Fossen Chapters 1 & 2.
-   --[Modern Robotics YouTube Lectures](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx), Chapter 2: 
+   -[Modern Robotics YouTube Lectures](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx), Chapter 2: 
 
 ## ARCHIVE
 Readings from 2018,
