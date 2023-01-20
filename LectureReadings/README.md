@@ -1,6 +1,9 @@
 # Lecture "readings"
 
 This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
+## Week 3 (1/24 & 1/26)
+   - Fossen Chapters 1-3
+   - [Modern Robotics YouTube Lectures](https://www.youtube.com/playlist?list=PLggLP4f-rq02vX0OQQ5vrCxbJrzamYDfx), Chapter 3.
 
 ## Week 2 (1/17 to 1/19)
    - Fossen Chapters 1 & 2.
