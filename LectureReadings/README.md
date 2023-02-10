@@ -1,6 +1,8 @@
 # Lecture "readings"
 
 This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
+## Week 5 (2/7 & 2/9)
+   - N/A
 ## Week 4 (1/31 & 2/2)
    - [ROS REP 105](https://www.ros.org/reps/rep-0105.html)
 
