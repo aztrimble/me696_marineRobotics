@@ -1,6 +1,14 @@
 # Lecture "readings"
 
 This file provide links to what I consier the minimum required reading/watching. Find and add/suggest more as required to learn the concepts:
+## Week 7 (2/21 & 2/23)
+   - [ROS2 "Beginner: Client Libraries" Workspace and Packages Tutorials](https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries.html)
+   - [Robotics Backend Package Organization suggestions](https://roboticsbackend.com/package-organization-for-a-ros-stack-best-practices/)
+   - [ROS2 TF2 tutorials](https://docs.ros.org/en/foxy/Tutorials/Intermediate/Tf2/Tf2-Main.html)
+## Week 6 (2/14 & 2/16)
+   - [ROS2 "Beginner: CLI Tutorials"](https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html)
+   - ["ROS Packages" section of the PACKT tutorials](https://subscription.packtpub.com/book/hardware+and+creative/9781783551798/1/ch01lvl1sec11/understanding-the-ros-file-system-level)
+
 ## Week 5 (2/7 & 2/9)
    - N/A
 ## Week 4 (1/31 & 2/2)
